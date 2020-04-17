@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="loader ">
+        <div class="circle"></div>
+    </div>
+    <div class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href=""><i class="fas fa-pencil-alt"></i>To<span>Do</span>List</a>
+            </div>
+            <div class="header__search">
+                <form class="form__search">
+                    <div class="search__box">
+                        <input type="text" placeholder="Search....." class="input">
+                        <a href="" class="btn__input"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="header__icon">
+                <ul>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Hình ảnh</a></li>
+                    <li><a href=""><i class="fas fa-th" aria-hidden="true"></i></a></li>
+                    <li><a href=""><img src="./assets/image/1.jpg" alt=""></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content__container">
+            <div class="content__left">
+                <ul class="content__list">
+                    <li class="list__item"><a href=""><i class="far fa-envelope"></i>Hộp thư đến</a></li>
+                    <li class="list__item"> <a href=""><i class="fa fa-star" aria-hidden="true"></i> Có gắn thẻ sao</a>
+                    </li>
+                    <li class="list__item"> <a href=""><i class="fa fa-clock-o" aria-hidden="true"></i> Đã tạm ẩn</a>
+                    </li>
+                    <li class="list__item"><a href=""><i class="fas fa-share"></i>Đã gửi</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-exclamation-circle"></i>Quan Trọng</a></li>
+                    <li class="list__item"><a href=""> <i class="fa fa-bar-chart" aria-hidden="true"></i> Trò chuyện</a>
+                    </li>
+                    <li class="list__item"><a href=""><i class="far fa-calendar-alt"></i>Đã lên lịch</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-address-card"></i>Tất cả thư</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-recycle"></i>Thư rác</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-trash-alt"></i>Thùng rác</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-cog"></i>Quản lý cá nhân</a></li>
+                    <li class="list__item"><a href=""><i class="fas fa-calendar-plus"></i>Tạo nhãn Mới</a></li>
+                </ul>
+                <div class="img">
+                    <img src="./assets/image/logofavicon.png" alt="">
+                </div>
+            </div>
+            <div class="content__right">
+                <div class="right__top">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th class=" bg id ">ID<i class="fas fa-caret-down" aria-hidden="true"></i></th>
+                                <th class=" bg user">User<i class="fas fa-caret-down" aria-hidden="true"></i></th>
+                                <th class=" bg email">Email<i class="fas fa-caret-down" aria-hidden="true"></i></th>
+                                <th class=" bg adress">Adress<i class="fas fa-caret-down" aria-hidden="true"></i></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn__plus">
+        <div class="btn__img">
+            <img src="./assets/image/plus.png" alt="">
+            <div class="btn__add">Add +</div>
+        </div>
+    </div>
+    <div class="ovelay"></div>
+    <div class="form__add-edit">
+        <div class="form__add__container">
+            <i class="fas fa-pen-square"id="edit"></i>
+            <div class="form__item">
+                <label for=""><i class="fas fa-user-edit"></i>User</label>
+                <input type="text" placeholder="User" id="user">
+            </div>
+            <div class="form__item">
+                <label for=""><i class="far fa-envelope"></i>Email</label>
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div class="form__item">
+                <label for=""><i class="fas fa-address-card"></i>Adress</label>
+                <input type="text" placeholder="Adress" id="adress">
+            </div>
+            <div class="form__item">
+                <button class="complete" >Complete</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup__delete">
+        <div class="container__popup">
+            <div class="popup__content">
+                <i class="fas fa-trash-alt"></i>
+                <h3>Are you sure ?</h3>
+                <a href="#!" style="background-color: #2ecc71;" class="yes">Yes</a>
+                <a href="#!" style="background-color: #e74c3c;" class="no">No</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
